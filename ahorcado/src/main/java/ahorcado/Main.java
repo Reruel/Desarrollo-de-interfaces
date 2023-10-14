@@ -1,14 +1,15 @@
-package ahorcado.reyes;
+package ahorcado;
 
 import java.util.Random;
 import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Scanner sc = new Scanner(System.in);
 		Random r = new Random();
 		String letter;
 		String[] words = { "spider", "frog", "chicken", "shark", "pangolin" };
@@ -26,7 +27,7 @@ public class Main {
 			gap[i] = "_ ";
 		}
 		do {
-			finalWord = "";
+			finalWord = "";  //Esta variable está para reiniciar el array y que no se solapen las respuestas
 			// Aquí empieza el juego
 			System.out.println("Vamos a jugar al a ahorcado. En este juego tendrás 5"
 					+ " vidas para tratar de adivinar la palabra oculta. Buena suerte." + "\nVidas actuales = "
@@ -37,14 +38,13 @@ public class Main {
 			}
 			// for(byte i=0; lives<=4; i++) {
 			System.out.println("\nEscribe una letra a ver si está.");
-			letter = sc.nextLine().toLowerCase(); // escribe en minúscula todo
+			letter = JOptionPane.showInputDialog(null, "Escribe una letra");
 			if (chosenWord.contains(letter)) {
 				for (byte i = 0; chosenWord.length() > i; i++) {
 					if (chosenWord.charAt(i) == letter.charAt(0)) {
 						gap[i] = letter + " "; // Esto es para que no se empiece a pegar la palabra
-
 					}
-					finalWord += gap[i].trim();
+					finalWord += gap[i].trim(); //Elimina los espacios en final word para que puedan coincidir las condiciones
 				}
 			} else {
 				lives--;
@@ -53,12 +53,11 @@ public class Main {
 			}
 		} while (lives > 0 && !(chosenWord.equals(finalWord)));
 		if (chosenWord.equals(finalWord)) {
-			System.out.println("Ganaste.");
+			JOptionPane.showMessageDialog(null, "Ganaste.");
 		} else {
-			System.out.println("Has perdido.");
+			JOptionPane.showMessageDialog(null, "Has perdido.");
 		}
 
-		sc.close();
 	}
 
 }
