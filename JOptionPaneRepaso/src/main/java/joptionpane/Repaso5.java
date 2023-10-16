@@ -2,7 +2,7 @@ package joptionpane;
 
 import javax.swing.JOptionPane;
 
-public class Repaso4 {
+public class Repaso5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -10,11 +10,11 @@ public class Repaso4 {
 				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);
 
 		if (codigo == JOptionPane.YES_OPTION) {
-			System.out.println("Has pulsado en SI");
+			JOptionPane.showMessageDialog(null, "Has pulsado SI");
 		} else if (codigo == JOptionPane.NO_OPTION) {
-			System.out.println("Has pulsado en NO");
+			JOptionPane.showMessageDialog(null, "Has pulsado NO");
 		} else {
-			System.out.println("Has pulsado en cancelar");
+			JOptionPane.showMessageDialog(null, "Has pulsado Cancelar");
 		}
 	}
 }

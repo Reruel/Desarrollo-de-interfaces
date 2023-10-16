@@ -7,7 +7,7 @@ public class JOptionPaneRepaso {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String nombre = "Reyes";
-		JOptionPane.showMessageDialog(null, "Bienvenida " + nombre);
+		JOptionPane.showMessageDialog(null, "Bienvenida, " + nombre);
 	}
 
 }
