@@ -17,7 +17,7 @@ public class Principal {
 		String[] botones = {"boton 1", "boton 2", "boton 3"};
 		
 		byte cont=1;
-		for(String s : botones) {
+		for(String s : botones) {  //forEach. Se van guardando los valores en los String s del array botones
 			ventana.agregarBoton(s, (100*cont), (50));
 			cont++;
 		}

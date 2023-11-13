@@ -20,7 +20,7 @@ public class VentanaJFrame1 extends JFrame {
 					VentanaJFrame1 frame = new VentanaJFrame1();
 					frame.setVisible(true);
 				} catch (Exception e) {
-					e.printStackTrace();
+					e.printStackTrace(); //Te imprime los errores por consola
 				}
 			}
 		});
