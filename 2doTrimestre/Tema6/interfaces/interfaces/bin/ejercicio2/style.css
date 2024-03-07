@@ -1,0 +1,9 @@
+.button {
+/* Ejemplo de estilo: botón con borde redondeado */
+-fx-background-radius: 25;
+}
+.label {
+/* Ejemplo de estilo: texto en negrita */
+-fx-font-weight: bold;
+-fx-text-fill: #20e354; /* Color del texto */
+}

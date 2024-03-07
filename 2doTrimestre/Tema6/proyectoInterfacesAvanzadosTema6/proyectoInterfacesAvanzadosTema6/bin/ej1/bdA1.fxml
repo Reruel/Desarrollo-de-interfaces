@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ej1.Controller">
+    <children>
+        <TableView fx:id="tableViewVideojuegos" prefHeight="214.0" prefWidth="910.0">
+            <columns>
+            <TableColumn fx:id="idColumn" prefWidth="47.0" text="ID" />
+                <TableColumn fx:id="nombreColumn" prefWidth="232.0" text="Nombre" />
+                <TableColumn fx:id="apellido1Column" prefWidth="156.0" text="apellido1" />
+                <TableColumn fx:id="apellido2Column" prefWidth="63.0" text="apellido2" />
+                 <TableColumn fx:id="fechaColumn" prefWidth="63.0" text="Fecha nacimiento" />
+                <TableColumn fx:id="esrepetidorColumn" prefWidth="187.0" text="Es repetidor" />
+                <TableColumn fx:id="telefonoColumn" prefWidth="174.0" text="Telefono" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>

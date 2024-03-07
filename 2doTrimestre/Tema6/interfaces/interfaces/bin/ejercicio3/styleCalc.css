@@ -1,0 +1,16 @@
+.button {
+	/* Ejemplo de estilo: botón con borde redondeado */
+	-fx-background-radius: 30;
+}
+.operacion{
+	-fx-background-color: #BAFEFF;
+}
+.igual{
+	-fx-background-color: #BEFB9F;
+}
+.punto{
+	-fx-background-color: #FB9FF8;	
+}
+.panel{
+	-fx-background-color: #FFCF59;	
+}

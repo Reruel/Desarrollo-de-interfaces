@@ -1,0 +1,10 @@
+.button{
+	-fx-background-color:#52FF62;
+}
+.titulo{
+	-fx-font-weight: bold;
+	 -fx-font-size: 30px;
+}
+.panel{
+	-fx-background-color:#FDFF91;
+}
